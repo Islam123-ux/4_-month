@@ -1,4 +1,9 @@
 {% extends 'components/navbar.html' %}
 {% load static %}
 {% block content %}
+<h1>Название: {{post.title}}</h1>
+<h2>Описание: {{post.content}}</h2>
+<h3>Ставка: {{post.rate}}</h3>
+<h4>Дата создания: {{post.created_at}}</h4>
+<h5>Дата обновления: {{post.updated_at}}</h5>
 {% endblock%}
